@@ -13,7 +13,7 @@ public class House extends Building {
     
     public House() {
         System.out.println("This is the house");
-        this.setIn(new Indoors());
+        this.setIn(new Indoors(new Human("John")));
         this.setOut(new Outdoors());
     }
     
