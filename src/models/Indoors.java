@@ -10,9 +10,16 @@ package models;
  * @author George.Pasparakis
  */
 public class Indoors {
-    Wall wall = new Wall();
+    Wall wall; // = new Wall();
+    Human human;
     
     public Indoors() {
         System.out.println("This is Indoors!");
+        wall = new Wall();
+    }
+    
+    public Indoors(Human human) {
+        this();
+        this.human = human;
     }
 }
