@@ -9,7 +9,7 @@ package models;
  *
  * @author George.Pasparakis
  */
-public class Door {
+public class Door extends Naming{
     
     public Door() {
         System.out.println("This is the Door");

@@ -9,11 +9,15 @@ package models;
  *
  * @author George.Pasparakis
  */
-public abstract class Mammal extends Naming{
-    
-    
-    public abstract void look();
-    public abstract void walk();
-    public abstract void run();
+public class Naming {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     
 }

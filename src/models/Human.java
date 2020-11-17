@@ -5,11 +5,13 @@
  */
 package models;
 
+import interfaces.IHuman;
+
 /**
  *
  * @author George.Pasparakis
  */
-public class Human extends Mammal {
+public class Human extends Mammal implements IHuman {
 
     public Human() {
         System.out.println("This is a human");
@@ -33,6 +35,11 @@ public class Human extends Mammal {
     @Override
     public void run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void openDoor(Door door) {
+        System.out.println("Human " + this.getName() + " opens the door " + door.getName());
     }
     
 }

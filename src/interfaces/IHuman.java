@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package models;
+package interfaces;
+
+import models.Door;
+import models.Human;
 
 /**
  *
  * @author George.Pasparakis
  */
-public abstract class Mammal extends Naming{
-    
-    
-    public abstract void look();
-    public abstract void walk();
-    public abstract void run();
+public interface IHuman {
+    void openDoor(Door door);
     
 }
