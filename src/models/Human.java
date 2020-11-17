@@ -17,6 +17,7 @@ public class Human extends Mammal {
     
     public Human(String name) {
         this.setName(name);
+        System.out.println("This is human " + this.getName());
     }
     
     @Override
