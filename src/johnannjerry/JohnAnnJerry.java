@@ -27,6 +27,7 @@ public class JohnAnnJerry {
         House house = new House(); // simple instantiation 
         house.humanOpensDoor(house.getIn().getHuman(), 
                              house.getIn().getWall().getDoor());
+        house.humanWalksToTheGarden(house.getIn().getHuman(), house.getOut());
 //        Building building = new House(); // polymorphism
 
         

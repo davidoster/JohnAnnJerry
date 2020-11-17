@@ -10,7 +10,7 @@ package models;
  * @author George.Pasparakis
  */
 public class Outdoors {
-    
+    public Human human;
     public Outdoors() {
         System.out.println("This is Outdoors");
     }

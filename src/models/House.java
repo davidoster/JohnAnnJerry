@@ -6,16 +6,20 @@
 package models;
 
 import interfaces.IIndoors;
+import java.util.List;
 
 /**
  *
  * @author George.Pasparakis
  */
 public class House extends Building implements IIndoors {
+    private Human human;
+    private List<Animal> animals;
     
     public House() {
         System.out.println("This is the house");
-        this.setIn(new Indoors(new Human("John")));
+        human = new Human("John");
+        this.setIn(new Indoors(human));
         this.setOut(new Outdoors());
     }
     
@@ -28,6 +32,11 @@ public class House extends Building implements IIndoors {
     @Override
     public void humanOpensDoor(Human human, Door door) {
        human.openDoor(door);
+    }
+    
+    public void humanWalksToTheGarden(Human human, Outdoors out) {
+        out.human = human;
+        getIn().setHuman(null);
     }
     
 }
