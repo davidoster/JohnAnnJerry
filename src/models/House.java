@@ -5,11 +5,13 @@
  */
 package models;
 
+import interfaces.IIndoors;
+
 /**
  *
  * @author George.Pasparakis
  */
-public class House extends Building {
+public class House extends Building implements IIndoors {
     
     public House() {
         System.out.println("This is the house");
@@ -21,6 +23,11 @@ public class House extends Building {
         System.out.println("This is the house");
         this.setIn(in);
         this.setOut(out);
+    }
+
+    @Override
+    public void humanOpensDoor(Human human, Door door) {
+       human.openDoor(door);
     }
     
 }

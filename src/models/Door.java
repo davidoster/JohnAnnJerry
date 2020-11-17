@@ -15,4 +15,9 @@ public class Door extends Naming{
         System.out.println("This is the Door");
     }
     
+    public Door(String name) {
+        this.setName(name);
+        System.out.println("This is the door " + this.getName());
+    }
+    
 }

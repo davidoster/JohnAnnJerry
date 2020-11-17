@@ -10,10 +10,18 @@ package models;
  * @author George.Pasparakis
  */
 public class Wall {
-    Door door;
+    private Door door;
     public Wall() {
         System.out.println("This is the Wall");
-        door = new Door();
+        door = new Door(" to the garden");
+    }
+
+    public Door getDoor() {
+        return door;
+    }
+
+    public void setDoor(Door door) {
+        this.door = door;
     }
     
 }

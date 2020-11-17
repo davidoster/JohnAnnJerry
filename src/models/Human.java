@@ -39,7 +39,8 @@ public class Human extends Mammal implements IHuman {
 
     @Override
     public void openDoor(Door door) {
-        System.out.println("Human " + this.getName() + " opens the door " + door.getName());
+        System.out.println("Human " + this.getName() + 
+                           " opens the door " + door.getName());
     }
     
 }
