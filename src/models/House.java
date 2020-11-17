@@ -37,6 +37,7 @@ public class House extends Building implements IIndoors {
     public void humanWalksToTheGarden(Human human, Outdoors out) {
         out.human = human;
         getIn().setHuman(null);
+        System.out.println("Human " + this.getOut().human.getName() + " walks to " + this.getOut().getName());
     }
     
 }

@@ -9,9 +9,10 @@ package models;
  *
  * @author George.Pasparakis
  */
-public class Outdoors {
+public class Outdoors extends Naming {
     public Human human;
     public Outdoors() {
         System.out.println("This is Outdoors");
+        this.setName("GARDEN!!!!");
     }
 }
